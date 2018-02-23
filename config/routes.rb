@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope '/proyecto1' do
+  #scope '/proyecto1' do
     # Defino pagina inicial
     root 'welcome#index'
     # Defino rutas de las localizaciones
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
     get '/logout' => 'sessions#destroy'
-  end
+  #end
 end
